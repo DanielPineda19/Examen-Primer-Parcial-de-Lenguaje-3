@@ -38,12 +38,12 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(74, 24);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(18, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(362, 40);
+            this.label1.Size = new System.Drawing.Size(475, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "¡BIENVENIDO USUARIO!";
+            this.label1.Text = "¡BIENVENIDO AL MENÚ PRINCIPAL!";
             // 
             // label2
             // 
@@ -58,7 +58,7 @@
             // 
             this.Formulario1Button.Location = new System.Drawing.Point(12, 151);
             this.Formulario1Button.Name = "Formulario1Button";
-            this.Formulario1Button.Size = new System.Drawing.Size(143, 75);
+            this.Formulario1Button.Size = new System.Drawing.Size(143, 56);
             this.Formulario1Button.TabIndex = 2;
             this.Formulario1Button.Text = "Formulario No.1";
             this.Formulario1Button.UseVisualStyleBackColor = true;
@@ -68,7 +68,7 @@
             // 
             this.Formulario2Button.Location = new System.Drawing.Point(184, 151);
             this.Formulario2Button.Name = "Formulario2Button";
-            this.Formulario2Button.Size = new System.Drawing.Size(143, 75);
+            this.Formulario2Button.Size = new System.Drawing.Size(143, 56);
             this.Formulario2Button.TabIndex = 3;
             this.Formulario2Button.Text = "Formulario No.2";
             this.Formulario2Button.UseVisualStyleBackColor = true;
@@ -78,7 +78,7 @@
             // 
             this.Formulario3Button.Location = new System.Drawing.Point(357, 151);
             this.Formulario3Button.Name = "Formulario3Button";
-            this.Formulario3Button.Size = new System.Drawing.Size(146, 75);
+            this.Formulario3Button.Size = new System.Drawing.Size(146, 56);
             this.Formulario3Button.TabIndex = 4;
             this.Formulario3Button.Text = "Formulario No.3";
             this.Formulario3Button.UseVisualStyleBackColor = true;
@@ -88,7 +88,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(515, 276);
+            this.ClientSize = new System.Drawing.Size(515, 237);
             this.Controls.Add(this.Formulario3Button);
             this.Controls.Add(this.Formulario2Button);
             this.Controls.Add(this.Formulario1Button);

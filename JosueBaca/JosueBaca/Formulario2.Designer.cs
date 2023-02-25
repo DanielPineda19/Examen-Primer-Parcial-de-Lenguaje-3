@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.Producto1TextBox = new System.Windows.Forms.TextBox();
@@ -48,26 +47,21 @@
             this.label12 = new System.Windows.Forms.Label();
             this.DescuentoTextBox = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PorcentajeTextBox = new System.Windows.Forms.TextBox();
             this.SubTotalTextBox = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.FacturarButton = new System.Windows.Forms.Button();
             this.ErrorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.RegresarButton = new System.Windows.Forms.Button();
+            this.SiguienteButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(259, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(258, 35);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SUPERMARKET KKK";
             // 
             // label2
             // 
@@ -117,7 +111,7 @@
             this.Precio1TextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio1TextBox.Location = new System.Drawing.Point(192, 119);
             this.Precio1TextBox.Name = "Precio1TextBox";
-            this.Precio1TextBox.Size = new System.Drawing.Size(102, 26);
+            this.Precio1TextBox.Size = new System.Drawing.Size(79, 26);
             this.Precio1TextBox.TabIndex = 7;
             // 
             // Precio2TextBox
@@ -125,7 +119,7 @@
             this.Precio2TextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Precio2TextBox.Location = new System.Drawing.Point(569, 119);
             this.Precio2TextBox.Name = "Precio2TextBox";
-            this.Precio2TextBox.Size = new System.Drawing.Size(102, 26);
+            this.Precio2TextBox.Size = new System.Drawing.Size(81, 26);
             this.Precio2TextBox.TabIndex = 9;
             // 
             // label5
@@ -142,7 +136,7 @@
             this.Cantidad1TextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cantidad1TextBox.Location = new System.Drawing.Point(192, 155);
             this.Cantidad1TextBox.Name = "Cantidad1TextBox";
-            this.Cantidad1TextBox.Size = new System.Drawing.Size(102, 26);
+            this.Cantidad1TextBox.Size = new System.Drawing.Size(79, 26);
             this.Cantidad1TextBox.TabIndex = 11;
             // 
             // label6
@@ -159,7 +153,7 @@
             this.Cantidad2TextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cantidad2TextBox.Location = new System.Drawing.Point(569, 154);
             this.Cantidad2TextBox.Name = "Cantidad2TextBox";
-            this.Cantidad2TextBox.Size = new System.Drawing.Size(102, 26);
+            this.Cantidad2TextBox.Size = new System.Drawing.Size(81, 26);
             this.Cantidad2TextBox.TabIndex = 13;
             // 
             // label7
@@ -178,7 +172,7 @@
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.DescuentoTextBox);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.PorcentajeTextBox);
             this.groupBox1.Controls.Add(this.SubTotalTextBox);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label9);
@@ -202,10 +196,12 @@
             // 
             // TotalPagarTextBox
             // 
+            this.TotalPagarTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.TotalPagarTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TotalPagarTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.TotalPagarTextBox.Location = new System.Drawing.Point(399, 84);
             this.TotalPagarTextBox.Name = "TotalPagarTextBox";
+            this.TotalPagarTextBox.ReadOnly = true;
             this.TotalPagarTextBox.Size = new System.Drawing.Size(119, 26);
             this.TotalPagarTextBox.TabIndex = 22;
             // 
@@ -220,9 +216,11 @@
             // 
             // DescuentoTextBox
             // 
+            this.DescuentoTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.DescuentoTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DescuentoTextBox.Location = new System.Drawing.Point(399, 40);
             this.DescuentoTextBox.Name = "DescuentoTextBox";
+            this.DescuentoTextBox.ReadOnly = true;
             this.DescuentoTextBox.Size = new System.Drawing.Size(119, 26);
             this.DescuentoTextBox.TabIndex = 20;
             // 
@@ -235,22 +233,23 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Descuento:";
             // 
-            // textBox2
+            // PorcentajeTextBox
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.textBox2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(134, 82);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(50, 26);
-            this.textBox2.TabIndex = 18;
-            this.textBox2.Text = "15%";
+            this.PorcentajeTextBox.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PorcentajeTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PorcentajeTextBox.Location = new System.Drawing.Point(134, 82);
+            this.PorcentajeTextBox.Name = "PorcentajeTextBox";
+            this.PorcentajeTextBox.ReadOnly = true;
+            this.PorcentajeTextBox.Size = new System.Drawing.Size(50, 26);
+            this.PorcentajeTextBox.TabIndex = 18;
             // 
             // SubTotalTextBox
             // 
+            this.SubTotalTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.SubTotalTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SubTotalTextBox.Location = new System.Drawing.Point(134, 40);
             this.SubTotalTextBox.Name = "SubTotalTextBox";
+            this.SubTotalTextBox.ReadOnly = true;
             this.SubTotalTextBox.Size = new System.Drawing.Size(119, 26);
             this.SubTotalTextBox.TabIndex = 15;
             // 
@@ -282,7 +281,7 @@
             // 
             // FacturarButton
             // 
-            this.FacturarButton.Location = new System.Drawing.Point(305, 401);
+            this.FacturarButton.Location = new System.Drawing.Point(305, 407);
             this.FacturarButton.Name = "FacturarButton";
             this.FacturarButton.Size = new System.Drawing.Size(167, 54);
             this.FacturarButton.TabIndex = 15;
@@ -294,12 +293,55 @@
             // 
             this.ErrorProvider1.ContainerControl = this;
             // 
+            // RegresarButton
+            // 
+            this.RegresarButton.Location = new System.Drawing.Point(89, 407);
+            this.RegresarButton.Name = "RegresarButton";
+            this.RegresarButton.Size = new System.Drawing.Size(182, 54);
+            this.RegresarButton.TabIndex = 16;
+            this.RegresarButton.Text = "Formulario Anterior";
+            this.RegresarButton.UseVisualStyleBackColor = true;
+            this.RegresarButton.Click += new System.EventHandler(this.RegresarButton_Click);
+            // 
+            // SiguienteButton
+            // 
+            this.SiguienteButton.Location = new System.Drawing.Point(507, 407);
+            this.SiguienteButton.Name = "SiguienteButton";
+            this.SiguienteButton.Size = new System.Drawing.Size(182, 54);
+            this.SiguienteButton.TabIndex = 17;
+            this.SiguienteButton.Text = "Siguiente Formulario";
+            this.SiguienteButton.UseVisualStyleBackColor = true;
+            this.SiguienteButton.Click += new System.EventHandler(this.SiguienteButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::JosueBaca.Properties.Resources.carrito_de_supermercado;
+            this.pictureBox1.Location = new System.Drawing.Point(228, 15);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(278, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(258, 35);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SUPERMARKET KKK";
+            // 
             // Formulario2
             // 
             this.AcceptButton = this.FacturarButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(770, 469);
+            this.ClientSize = new System.Drawing.Size(770, 484);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.SiguienteButton);
+            this.Controls.Add(this.RegresarButton);
             this.Controls.Add(this.FacturarButton);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Cantidad2TextBox);
@@ -324,14 +366,13 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ErrorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox Producto1TextBox;
@@ -349,7 +390,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox DescuentoTextBox;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PorcentajeTextBox;
         private System.Windows.Forms.TextBox SubTotalTextBox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
@@ -357,5 +398,9 @@
         private System.Windows.Forms.Button FacturarButton;
         private System.Windows.Forms.ErrorProvider ErrorProvider1;
         private System.Windows.Forms.Label FechaLabel;
+        private System.Windows.Forms.Button RegresarButton;
+        private System.Windows.Forms.Button SiguienteButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
     }
 }

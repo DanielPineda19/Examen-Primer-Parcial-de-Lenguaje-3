@@ -32,17 +32,21 @@
             this.InteresesListBox = new System.Windows.Forms.ListBox();
             this.CalcularInteresButton = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.SiguienteButton = new System.Windows.Forms.Button();
+            this.MenuPrincipalButton = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(188, 23);
+            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(279, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(364, 29);
+            this.label1.Size = new System.Drawing.Size(213, 35);
             this.label1.TabIndex = 0;
-            this.label1.Text = "BANCO CENTRAL DE HONDURAS";
+            this.label1.Text = "BAC HONDURAS";
             // 
             // InteresesListBox
             // 
@@ -56,9 +60,9 @@
             // 
             // CalcularInteresButton
             // 
-            this.CalcularInteresButton.Location = new System.Drawing.Point(495, 211);
+            this.CalcularInteresButton.Location = new System.Drawing.Point(495, 220);
             this.CalcularInteresButton.Name = "CalcularInteresButton";
-            this.CalcularInteresButton.Size = new System.Drawing.Size(188, 70);
+            this.CalcularInteresButton.Size = new System.Drawing.Size(188, 52);
             this.CalcularInteresButton.TabIndex = 2;
             this.CalcularInteresButton.Text = "Calcular Intereses";
             this.CalcularInteresButton.UseVisualStyleBackColor = true;
@@ -73,11 +77,45 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Intereses Mensuales";
             // 
+            // SiguienteButton
+            // 
+            this.SiguienteButton.Location = new System.Drawing.Point(495, 303);
+            this.SiguienteButton.Name = "SiguienteButton";
+            this.SiguienteButton.Size = new System.Drawing.Size(188, 52);
+            this.SiguienteButton.TabIndex = 4;
+            this.SiguienteButton.Text = "Siguiente Formulario";
+            this.SiguienteButton.UseVisualStyleBackColor = true;
+            this.SiguienteButton.Click += new System.EventHandler(this.SiguienteButton_Click);
+            // 
+            // MenuPrincipalButton
+            // 
+            this.MenuPrincipalButton.Location = new System.Drawing.Point(495, 138);
+            this.MenuPrincipalButton.Name = "MenuPrincipalButton";
+            this.MenuPrincipalButton.Size = new System.Drawing.Size(188, 52);
+            this.MenuPrincipalButton.TabIndex = 5;
+            this.MenuPrincipalButton.Text = "Menú Principal";
+            this.MenuPrincipalButton.UseVisualStyleBackColor = true;
+            this.MenuPrincipalButton.Click += new System.EventHandler(this.MenuPrincipalButton_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::JosueBaca.Properties.Resources.BAC_Credomatic_v_rgb1;
+            this.pictureBox1.Location = new System.Drawing.Point(225, 23);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 43);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // Formulario1
             // 
+            this.AcceptButton = this.CalcularInteresButton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(711, 419);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.MenuPrincipalButton);
+            this.Controls.Add(this.SiguienteButton);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.CalcularInteresButton);
             this.Controls.Add(this.InteresesListBox);
@@ -88,6 +126,7 @@
             this.Name = "Formulario1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulario1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -99,5 +138,8 @@
         private System.Windows.Forms.ListBox InteresesListBox;
         private System.Windows.Forms.Button CalcularInteresButton;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button SiguienteButton;
+        private System.Windows.Forms.Button MenuPrincipalButton;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
